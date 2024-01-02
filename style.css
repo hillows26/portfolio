@@ -1,0 +1,137 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #5588BB;
+    font-size: 16px;
+    position: relative;
+}
+
+.logo {
+    width: 33vw;
+    height: 20vh;
+    margin: 1rem 0 0 1rem;
+    max-width:500px;
+    max-height: 250px;
+}
+
+.back-btn{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left:10%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
+}
+
+.back-btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* Top */
+
+.section {
+    position: absolute;
+    right: 7.5%;
+    bottom: 15%;
+}
+
+.content {
+    font-size: 3rem;
+    /* font-weight: bold; */
+    letter-spacing: 0.25rem;
+    text-align: right;
+    transition: 0.25s;
+    position: relative;
+}
+
+.content > span{
+    font-size: 1rem;
+    color: #fff;
+}
+
+.content+.content {
+    margin-top: 3rem;
+}
+
+.content::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    display: inline-block;
+    width: 33vw;
+    height: 0.8px;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    background-color: #fff;
+}
+
+.content:hover{
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* About */
+
+.profile-img-box{
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    
+}
+
+.profile-img{
+    width: 33%;
+    height:60%;
+    object-fit: cover;
+}
+
+.profile-txt{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    letter-spacing: 0.1rem;
+}
+
+/* portfolio */
+
+.portfolio{
+    width: 60vw;
+    position: relative;
+    left: 33%;
+    margin-top: 3%;
+    }
+
+
+.portfolio-wrapper{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.portfolio-wrapper + .portfolio-wrapper{
+    margin-top: 8%;
+}
+
+
+.portfolio-content{
+    width:150px;
+    height: 150px;
+    /* border: #000 solid 1px; */
+    /* background-color: #000; */
+}
+
+.portfolio-content + .portfolio-content{
+    margin-left: 10%;
+}
